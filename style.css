@@ -1,0 +1,155 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #141414;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Centered Game UI */
+.container {
+    background: #000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Game Over Popup */
+#game-over-popup {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+#final-score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* Layout for Game */
+#game-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 100%;
+    background-color: #ff5733;
+    transition: width 1s linear;
+}
+
+/* Timer */
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Scrambled Word */
+.scrambled-word {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Buttons */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Buttons */
+.button, .delete-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5733;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px rgba(255, 87, 51, 0.4);
+    cursor: pointer;
+}
+
+.button:hover, .delete-btn:hover {
+    background-color: #a60409;
+}
+
+/* Admin Panel & Leaderboard */
+.admin-button {
+    background-color: #3498db;
+}
+
+.admin-button:hover {
+    background-color: #2980b9;
+}
+
+/* Input Fields */
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border-radius: 5px;
+    border: none;
+    margin: 10px 0;
+}
+
+/* Leaderboard Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background-color: #222;
+    color: #ffcc00;
+}
+
+td {
+    background-color: #1a1a1a;
+}
